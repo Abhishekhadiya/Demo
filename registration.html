@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STUDENT REGISTRATION FORM</title>
+    <style>
+        body{
+                color:black;
+                font-size:20px;
+                
+                background-color: bisque;
+    
+            }
+        </style>
+</head>
+<body>
+    <center>
+        <form method="post">
+            <h1>Registration Form</h1>
+            <table>
+                <tr>
+                    <td>
+                        <lable>First name:</lable>
+                    </td>
+                    <td>
+                        <input type="text" name="txtname" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Last name:</lable>
+                    </td>
+                    <td>
+                        <input type="text" name="txtname" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Gender:</lable>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="m" required>Male
+                        <input type="radio" name="gender" value="f" required>Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Birthdate:</lable>
+                    </td>
+                    <td>
+                        <input type="date" name="bhd" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Address:</label>
+                    </td>
+                    <td>
+                        <textarea name="add" row="5" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Mobileno:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="mno">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Cast:</label>
+                    </td>
+                    <td>
+                        <select name="cast" id="cast">
+                            <option value="select">select</option>
+                            <option value="open">open</option>
+                            <option value="obc">obc</option>
+                            <option value="sc">sc</option>
+                            <option value="st">st</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Sub Cast:</label>
+                    </td>
+                    <td>
+                        <select name="scast" id="scast">
+                            <option value="select">select</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Muslim">Muslim</option>
+                            <option value="Sikha">Sikha</option>
+                            <option value="Parasi">Parasi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Qualification:</label>
+                    </td>
+                    <td>
+                        <input list="Qualification">
+                        <datalist id="Qualification">
+                            <option value="s.s.c"></option>
+                            <option value="h.s.c"></option>
+                            <option value="b.c.a"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Hobby:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="cricket">cricket
+                        <input type="checkbox" name="hobby" value="singing">singing
+                        <input type="checkbox" name="hobby" value="writing">writing
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="s" value="Register">
+                    </td>
+                    <td>
+                        <input type="reset" name="r" value="cancel">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
